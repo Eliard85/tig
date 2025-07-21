@@ -1,0 +1,12 @@
+[Unit]
+Description=tig
+After=network.target
+
+[Service]
+ExecStart=/home/user/tig_pool_main/pool_tig_launch_14332.sh
+Restart=always
+User=user
+WorkingDirectory=/home/user/tig_pool_main
+
+[Install]
+WantedBy=multi-user.target
