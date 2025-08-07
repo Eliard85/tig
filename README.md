@@ -4,4 +4,4 @@ sudo wget -O /etc/systemd/system/tig.service https://github.com/Eliard85/tig/raw
 
 sudo systemctl enable tig.service
 
-./pool* --cpu_workers 0 для запуска без cpu
+./pool_tig_launch_*.sh --cpu_workers 0 - для запуска без cpu
