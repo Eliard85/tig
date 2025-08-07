@@ -3,7 +3,7 @@ Description=tig
 After=network.target
 
 [Service]
-ExecStart=/home/user/tig_pool_main/pool_tig_launch_*.sh
+ExecStart=/home/user/tig_pool_main/pool_tig_launch_*.sh --cpu_workers 0
 Restart=always
 User=user
 WorkingDirectory=/home/user/tig_pool_main/
