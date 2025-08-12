@@ -5,6 +5,7 @@ After=network.target
 [Service]
 ExecStart=/bin/bash -c '/home/user/tig_pool_main/pool_tig_launch_*.sh --cpu_workers 0'
 Restart=always
+RestartSec=5
 User=user
 WorkingDirectory=/home/user/tig_pool_main/
 Environment="PATH=/usr/local/bin:/usr/bin:/bin"
